@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company RAG</title>
+    <link rel="stylesheet" href="/static/style.css?v=markdown-v1">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">Company RAG</div>
+                <button id="newChatButton" class="new-chat-button">＋ 新对话</button>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="status-dot"></div>
+                <span>本地知识库</span>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div class="topbar-title">企业资料助手</div>
+                <div class="topbar-subtitle">DeepSeek · RAG</div>
+            </header>
+            <section id="messages" class="messages">
+                <div id="welcome" class="welcome">
+                    <div class="welcome-logo">R</div>
+                    <h1>企业资料助手</h1>
+                    <p>可以询问资料库中的方案、参数、版本和技术要求</p>
+                </div>
+            </section>
+            <div class="composer-area">
+                <form id="chatForm" class="composer">
+                    <textarea id="questionInput" placeholder="向知识库提问……" rows="1" autofocus></textarea>
+                    <button id="sendButton" type="submit" class="send-button" title="发送">↑</button>
+                </form>
+                <div class="footer-tip">Enter 发送 · Shift + Enter 换行</div>
+            </div>
+        </main>
+    </div> 
+    <script src="/static/app.js?v=markdown-v1"></script>
+</body>
+</html>

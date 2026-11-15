@@ -1,0 +1,8 @@
+python-dotenv
+pymupdf
+python-docx
+openpyxl
+python-pptx
+sentence-transformers
+qdrant-client
+requests
